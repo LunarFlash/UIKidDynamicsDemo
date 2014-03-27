@@ -7,8 +7,12 @@
 //
 
 #import "YIFirstViewController.h"
+@import QuartzCore;
 
 @interface YIFirstViewController ()
+
+@property (nonatomic, strong) UIDynamicAnimator *animator;
+@property (nonatomic, strong) UIView *orangeSpaceShip;
 
 @end
 
@@ -17,13 +21,36 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+	
+    
+    // Setup ball view
+    
+    self.orangeSpaceShip = [[UIView alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 50.0f, 50.0f)];
+    UIImage *orangeSpaceShipImage = [UIImage imageNamed:@"orangeShip.png"];
+    self.orangeSpaceShip.backgroundColor = [UIColor colorWithPatternImage:orangeSpaceShipImage];
+    self.orangeSpaceShip.layer.borderColor = [UIColor blackColor].CGColor;
+    self.orangeSpaceShip.layer.borderWidth = 0.0;
+    [self.view addSubview:self.orangeSpaceShip];
+    
+    // Initialize the animator
+    self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    
+    
+    
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+    
+    
+    
+    
 }
 
 @end
