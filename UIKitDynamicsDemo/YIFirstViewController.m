@@ -14,6 +14,9 @@
 @property (nonatomic, strong) UIDynamicAnimator *animator;
 @property (nonatomic, strong) UIView *orangeSpaceShip;
 
+
+-(void)demoGravity;
+
 @end
 
 @implementation YIFirstViewController
@@ -46,11 +49,11 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-    
-    
-    
-    
-    
+}
+
+-(void)demoGravity
+{
+        
 }
 
 @end
