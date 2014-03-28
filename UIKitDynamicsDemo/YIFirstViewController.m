@@ -30,7 +30,8 @@
     
     self.orangeSpaceShip = [[UIView alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 50.0f, 50.0f)];
     UIImage *orangeSpaceShipImage = [UIImage imageNamed:@"orangeShip.png"];
-    self.orangeSpaceShip.backgroundColor = [UIColor colorWithPatternImage:orangeSpaceShipImage];
+    UIImageView *orangeSpaceShipImageView = [[UIImageView alloc] initWithImage:orangeSpaceShipImage];
+    [self.orangeSpaceShip addSubview:orangeSpaceShipImageView];
     self.orangeSpaceShip.layer.borderColor = [UIColor blackColor].CGColor;
     self.orangeSpaceShip.layer.borderWidth = 0.0;
     [self.view addSubview:self.orangeSpaceShip];
@@ -38,6 +39,8 @@
     // Initialize the animator
     self.animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     
+    
+    [self demoGravity];
     
     
     
@@ -53,8 +56,11 @@
 
 -(void)demoGravity
 {
-    // this is a test
-    
+    UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.orangeSpaceShip]];
+    [self.animator addBehavior:gravityBehavior];
+    gravityBehavior.action = ^{
+        NSLog(@"%f", self.orangeSpaceShip.center.y);
+    };
 }
 
 @end
