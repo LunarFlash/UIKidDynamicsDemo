@@ -28,7 +28,7 @@
     
     // Setup ball view
     
-    self.orangeSpaceShip = [[UIView alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 50.0f, 50.0f)];
+    self.orangeSpaceShip = [[UIView alloc] initWithFrame:CGRectMake(100.0f, 100.0f, 135.0f, 135.0f)];
     UIImage *orangeSpaceShipImage = [UIImage imageNamed:@"orangeShip.png"];
     UIImageView *orangeSpaceShipImageView = [[UIImageView alloc] initWithImage:orangeSpaceShipImage];
     [self.orangeSpaceShip addSubview:orangeSpaceShipImageView];
@@ -61,6 +61,14 @@
     gravityBehavior.action = ^{
         NSLog(@"%f", self.orangeSpaceShip.center.y);
     };
+    
+    UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.orangeSpaceShip]];
+    [collisionBehavior addBoundaryWithIdentifier:@"tabbar"
+                                       fromPoint:self.tabBarController.tabBar.frame.origin
+                                         toPoint:CGPointMake(self.tabBarController.tabBar.frame.origin.x + self.tabBarController.tabBar.frame.size.width, self.tabBarController.tabBar.frame.origin.y)];
+    [self.animator addBehavior:collisionBehavior];
+    
+    
 }
 
 @end
