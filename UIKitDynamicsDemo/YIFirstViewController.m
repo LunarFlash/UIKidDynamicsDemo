@@ -56,17 +56,29 @@
 
 -(void)demoGravity
 {
+    // Add gravity
     UIGravityBehavior *gravityBehavior = [[UIGravityBehavior alloc] initWithItems:@[self.orangeSpaceShip]];
     [self.animator addBehavior:gravityBehavior];
     gravityBehavior.action = ^{
         NSLog(@"%f", self.orangeSpaceShip.center.y);
     };
     
+    
+    // Add collision against tabbar
     UICollisionBehavior *collisionBehavior = [[UICollisionBehavior alloc] initWithItems:@[self.orangeSpaceShip]];
     [collisionBehavior addBoundaryWithIdentifier:@"tabbar"
                                        fromPoint:self.tabBarController.tabBar.frame.origin
                                          toPoint:CGPointMake(self.tabBarController.tabBar.frame.origin.x + self.tabBarController.tabBar.frame.size.width, self.tabBarController.tabBar.frame.origin.y)];
     [self.animator addBehavior:collisionBehavior];
+    
+    // Add dynamic behavior
+    UIDynamicItemBehavior *shipBehavior = [[UIDynamicItemBehavior alloc] initWithItems:@[self.orangeSpaceShip]];
+    shipBehavior.elasticity = 0.75;
+    shipBehavior.resistance = 0.50;
+    shipBehavior.friction = 1.0;
+    [self.animator addBehavior:shipBehavior];
+    
+    
     
     
 }
