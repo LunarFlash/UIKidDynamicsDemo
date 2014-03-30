@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YIFirstViewController : UIViewController
+@interface YIFirstViewController : UIViewController <UICollisionBehaviorDelegate>
 
 @end

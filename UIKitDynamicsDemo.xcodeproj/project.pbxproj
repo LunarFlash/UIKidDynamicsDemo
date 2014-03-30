@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35813FB418E771EE00D80D12 /* soccerBall.png in Resources */ = {isa = PBXBuildFile; fileRef = 35813FB318E771EE00D80D12 /* soccerBall.png */; };
 		3711682718E4A66100BCC121 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3711682618E4A66100BCC121 /* Foundation.framework */; };
 		3711682918E4A66100BCC121 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3711682818E4A66100BCC121 /* CoreGraphics.framework */; };
 		3711682B18E4A66100BCC121 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3711682A18E4A66100BCC121 /* UIKit.framework */; };
@@ -61,6 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		35813FB318E771EE00D80D12 /* soccerBall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soccerBall.png; sourceTree = "<group>"; };
 		3711682318E4A66100BCC121 /* UIKitDynamicsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIKitDynamicsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3711682618E4A66100BCC121 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3711682818E4A66100BCC121 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -239,6 +241,7 @@
 				3711687A18E4B92400BCC121 /* 13.png */,
 				3711687B18E4B92400BCC121 /* 13B.png */,
 				3711686118E4B8AA00BCC121 /* orangeShip.png */,
+				35813FB318E771EE00D80D12 /* soccerBall.png */,
 			);
 			name = Assets;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 				3711687E18E4B92400BCC121 /* 2B.png in Resources */,
 				3711688918E4B92400BCC121 /* 8.png in Resources */,
 				3711687F18E4B92400BCC121 /* 3.png in Resources */,
+				35813FB418E771EE00D80D12 /* soccerBall.png in Resources */,
 				3711688018E4B92400BCC121 /* 3B.png in Resources */,
 				3711684218E4A66100BCC121 /* Images.xcassets in Resources */,
 				3711689318E4B92400BCC121 /* 13.png in Resources */,
@@ -575,6 +579,7 @@
 				3711685A18E4A66100BCC121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3711685B18E4A66100BCC121 /* Build configuration list for PBXNativeTarget "UIKitDynamicsDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +588,7 @@
 				3711685D18E4A66100BCC121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

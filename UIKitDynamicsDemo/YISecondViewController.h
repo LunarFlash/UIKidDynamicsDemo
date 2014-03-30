@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YISecondViewController : UIViewController
+@interface YISecondViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
