@@ -16,12 +16,8 @@ Create an UIDynamicAnimator, add behaviors to the animator. There are several ty
 
 This demo shows how to animate these behaviors through the UIDynamicAnimator class.
 ![ScreenShot](https://raw.githubusercontent.com/LunarFlash/UIKitDynamicsDemo/master/UIKitDynamicsDemo/ball.gif)
-![Alt text](https://raw.github.com/LunarFlash/UIKitDynamicsDemo/blob/master/UIKitDynamicsDemo/menuGravity.gif "Menu Gravity")
+![ScreenShot](https://raw.githubusercontent.com/LunarFlash/UIKitDynamicsDemo/master/UIKitDynamicsDemo/menuGravity.gif)
 
-
-https://github.com/LunarFlash/UIKitDynamicsDemo/blob/master/UIKitDynamicsDemo/ball.gif
-
-https://github.com/LunarFlash/UIKitDynamicsDemo/blob/master/UIKitDynamicsDemo/menuGravity.gif
 
 
 
