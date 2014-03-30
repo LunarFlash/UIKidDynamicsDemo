@@ -15,6 +15,7 @@ Create an UIDynamicAnimator, add behaviors to the animator. There are several ty
 -UISnapBehavior
 
 This demo shows how to animate these behaviors through the UIDynamicAnimator class.
+[![ScreenShot](https://github.com/LunarFlash/UIKitDynamicsDemo/blob/master/UIKitDynamicsDemo/ball.gif)
 
 https://github.com/LunarFlash/UIKitDynamicsDemo/blob/master/UIKitDynamicsDemo/ball.gif
 
