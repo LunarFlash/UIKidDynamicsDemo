@@ -91,7 +91,7 @@
 }
 
 -(void)playWithBall {
-    UIView *obstacle1 = [[UIView alloc] initWithFrame:CGRectMake(0, 120, 120, 20)];
+    UIView *obstacle1 = [[UIView alloc] initWithFrame:CGRectMake(0, 105, 120, 20)];
     obstacle1.backgroundColor = [UIColor greenColor];
     UIView *obstacle2 = [[UIView alloc] initWithFrame:CGRectMake(170, 300, 150, 20)];
     obstacle2.backgroundColor = [UIColor greenColor];
@@ -167,7 +167,7 @@
          UIPushBehavior *pushBehavior = [[UIPushBehavior alloc] initWithItems:@[self.soccerBall] mode:UIPushBehaviorModeInstantaneous];
          pushBehavior.magnitude = 1.5;
          [self.animator addBehavior:pushBehavior];
-         self.isBallRolling = YES;
+         self.isBallRolling = NO;
      }
     
 }
