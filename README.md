@@ -8,11 +8,11 @@ The new Dynamics library makes it very easy to create physics mased interaction 
 The way everything ties together is very simple:
 Create an UIDynamicAnimator, add behaviors to the animator. There are several types of behvaiors:
 
--UIGravityBehavior
--UICollisionBehavior
--UIPushBehavior
--UIAttachmentBehavior
--UISnapBehavior
+* UIGravityBehavior
+* UICollisionBehavior
+* UIPushBehavior
+* UIAttachmentBehavior
+* UISnapBehavior
 
 This demo shows how to animate these behaviors through the UIDynamicAnimator class.
 ![ScreenShot](https://raw.githubusercontent.com/LunarFlash/UIKitDynamicsDemo/master/UIKitDynamicsDemo/ball.gif)
