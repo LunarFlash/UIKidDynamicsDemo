@@ -1,7 +1,7 @@
 UIKidDynamicsDemo
 =================
 
-A demo that demonstrates how the new Dynamics library works in UIKIT for iOS7 from a great tutorial at AppCoda.com
+My demo that demonstrates how the new Dynamics library works in UIKIT for iOS7 from a great tutorial at AppCoda.com
 
 The new Dynamics library makes it very easy to create physics mased interaction between UIViews. Conveniently, most UI controls such as UILabels and UIButtons are sublasses of UIViews. 
 
